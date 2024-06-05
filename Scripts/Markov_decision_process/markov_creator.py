@@ -660,20 +660,10 @@ class MDP_Data:
         trans_df.to_csv(r'C:\Users\dadashev\Dropbox\Optimizing_Mobility_with_Markovian_Model_for_AMoD\Data\Markov_decision_process\model_%s\Transitions\trans_df.csv'%(model),index=False)
         self.check_transition()
 
-#%%
+
+###Model creation
 
 taz_info = pd.read_csv(r'C:\Users\dadashev\Dropbox\Optimizing_Mobility_with_Markovian_Model_for_AMoD\Data\Keys\zones_numbering.csv')
 requst=pd.read_json(r'C:\Users\dadashev\Dropbox\Optimizing_Mobility_with_Markovian_Model_for_AMoD\Data\Demand\Amod_schedule\requst_pm.json')
-#%%
-
 trajectory=pd.read_csv(r'C:\Users\dadashev\Dropbox\Optimizing_Mobility_with_Markovian_Model_for_AMoD\Data\Supply\path_with_kwh_all.csv')
-#%%
-
-data=MDP_Data(4,5,requst,taz_info,trajectory)
-states=data.get_states()
-actions=data.get_actions()
-sub_state_actions=data.get_state_action_subset()
-req=data.get_demand_table()
-rew=data.get_reward()
-state_action_state=data.get_next_state_from_state()
-trans=data.get_transition()
+data=MDP_Data(11,192,requst,taz_info,trajectory)
