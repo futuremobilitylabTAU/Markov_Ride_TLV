@@ -15,5 +15,5 @@ The output of the MDP model is function  which suggests the optimal action of a 
 1. [Markov  Model](#data-directory-structure)
 2. [Operator](#data-directory-structure)
 3. [Anlysis Scripts](#data-directory-structure)
-4. [Folders Directory Structure](#[data-directory-structure](https://github.com/futuremobilitylabTAU/markov_ride_tlv/wiki/Folders-Directory-Structure))
+4. [Folders Directory Structure](https://github.com/futuremobilitylabTAU/markov_ride_tlv/wiki/Folders-Directory-Structure)
 5. [License](#license)
